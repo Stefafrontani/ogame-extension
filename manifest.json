@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Ogame",
+  "description": "OGame",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*" , "https://*/*"],
+      "js": ["jquery-3.4.1.min.js", "cargosToAttack.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["http://*/*" , "https://*/*"],
+      "js": ["jquery-3.4.1.min.js", "deleteShownMessages.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
